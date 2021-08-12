@@ -1,0 +1,227 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    padding: 30px;
+    background-color: rgba(139, 131, 131, 0.041);
+}
+
+/* icone do dropdown restaurante */
+.drop-if::before{
+    content: '';
+    background-image: url(../images/logo.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -5px;    
+}
+
+.restaurante, .endereco{
+    font-weight: bolder;   
+}
+
+.endereco{
+    color: #3e3e3e;
+    font-size: 0.875rem;
+}
+
+.endereco, .entrega{
+    margin-left: 30px;
+}
+
+/* icone do gps de endereço */
+.endereco::before{
+    content: '';
+    background-image: url(../images/gps.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    margin-left: -18px;
+}
+
+.entrega{
+  font-size: 0.75rem;
+  color: #a6a5a5;
+}
+
+/* inicio banner */
+.backCupom{
+width: 100%;
+height: 50px;
+color: white;
+background-color: #50a773;
+display: block;
+font-weight: bolder;
+text-align: center;
+padding: 10px;
+}
+
+/* icone do banner de cupom */
+.backCupom::before{
+    content: "";
+    background-image: url(../images/desconto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 23px;
+    position: absolute;
+    margin-left: -30px;
+}
+
+.cupom{
+    position: relative;
+}
+
+.menu {
+    margin-top: 60px;
+}
+
+.imageMenu{
+    width: 100px;
+    height: 100px;
+}
+
+.nomeMenu{
+color: black;
+font-weight: bolder;
+text-align: center;
+}
+
+.imagePerfil{
+    width: 25px;
+    height: 25px;
+    margin-top: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+ /* inicio responsividade */
+
+ @media(max-width:576px)
+  {
+      .footer, .tiFooter{
+          display: none;
+      }
+  }
+
+@media (max-width: 767px) {
+    .ifood, .busca, .linkPerfil, .ofertas, .menu, .baner, .promocao, .backCupom::before{
+        display: none;
+    }
+    .backCupom{
+        height: 60px;
+        align-items: center;
+        width: 100%;    
+    }    
+}
+    
+
+@media(min-width:768px){
+    .slide{
+        display: none;}
+}
+
+.filtro, .nav-item{
+    margin-top: 20px;
+}
+
+@media (max-width:992px ){
+        .linkPerfil, .ifood{
+            display: none;
+        }
+}
+    
+.baner{
+    width: 350px;
+    margin-top: 20px;
+}
+@media(max-width:1055px){
+    .menu{
+          display: none;
+      }
+
+  }
+
+@media(max-width:1200px){
+    .baaner{display: none;}
+}
+
+
+.sub{
+    
+    border: solid #f2f2f2 3px;
+    border-radius: 10px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.subMenu{
+    color: black;
+    
+}
+/* hover de titulos de produtos e filtros */
+.sub:hover{
+    background-color: rgba(189, 164, 164, 0.329);
+}
+
+.itens{ 
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 15px;
+}
+/* cor da quilometragem e avaliação da lista de produtos */
+.listProd{
+    color: #dd8914;
+}
+ 
+  .ofertas, .caro{
+      margin-top: 20px;
+
+  }
+
+  .footer{
+      margin-top: 33px;
+      color: #717171;
+      font-size: 1rem;
+      
+  }
+
+  .tiFooter{
+      color: #3e3e3e;
+      font-size: 1.25rem;
+  }
+
+  .imgfooter{
+      margin-left: 5px;
+
+  }
+
+.fimFooter{
+
+    padding: 20px;
+  }
+
+ 
+  /* icone do footer  */
+.iconFooter::before{
+
+    content: "";
+    background-image: url(../images/ifood.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 20px;
+    
+}
